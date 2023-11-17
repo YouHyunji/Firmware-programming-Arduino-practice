@@ -15,7 +15,6 @@ void setup() {
   Serial.begin(9600);
   IrReceiver.begin(IR_RECEIVE_PIN);   //리모콘
   myServo.attach(11);  // 서보모터
-
 }
 
 void loop() {
@@ -26,12 +25,13 @@ void loop() {
 
       switch( command ) {
         
-        case IR_BUTTON_Up: {         
+        case IR_BUTTON_Up: {         // 방향키 위쪽 버튼일 때
           Serial.println("90");
           myServo.write(90);
           break;
         }
-        case IR_BUTTON_Ok: {         
+        
+        case IR_BUTTON_Ok: {         // OK 버튼일 때
           Serial.println("좌우로 흔들기");
           myServo.write(0);
           delay(500);
@@ -43,17 +43,20 @@ void loop() {
           delay(500);
           break;
         }
-        case IR_BUTTON_Left: {       
+        
+        case IR_BUTTON_Left: {       // 방향키 왼쪽 버튼일 때
           Serial.println("0");
           myServo.write(0);
           break;
         }
-        case IR_BUTTON_Right: {       
+        
+        case IR_BUTTON_Right: {      // 방향키 오른쪽 버튼일 때
           Serial.println("180");
           myServo.write(180);
           break;
         }
-        default: {
+        
+        default: {                  // 그 외
           Serial.println("Try again");
         }
       }
