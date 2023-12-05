@@ -2,7 +2,8 @@
 // 일반소자, 측정 모듈
 // 입력 값을 시리얼 모니터에 출력
 
-int pin_CdS = A0;   // 아날로그
+//int pin_CdS = A0;   // 일반 소자
+int pin_CdS = A5;   // 측정 모듈
 int pin_LED = 13;
 int val = 0;
 
