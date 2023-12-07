@@ -1,5 +1,6 @@
 // 리모콘 기본 조작
 // 버튼 지정
+// Remote_Basic 소스코드에서 리모콘의 각 버튼의 숫자를 시리얼 모니터로 확인할 것
 
 #include <IRremote.h>
 #define IR_RECEIVE_PIN 8
