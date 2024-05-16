@@ -1,6 +1,8 @@
 # Firmware-programming-Arduino-practice
 펌웨어 프로그래밍 수업에서 아두이노를 활용한 실습 내용을 모아둔 저장소입니다.
 
+<br><br>
+
 ## ✏️ 실습 내용
 
 ### 2주차 ( 2023. 09. 08 ) : Serial Communication & LED
